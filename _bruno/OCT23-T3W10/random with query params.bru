@@ -1,0 +1,18 @@
+meta {
+  name: random with query params
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/pokemon/getbyid/25
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "favouritePokemon": "squirtle",
+    "favouriteFood":"mango"
+  }
+}
